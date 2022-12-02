@@ -15,9 +15,9 @@ WHERE (age > 44 AND income = 100000)
 
 /*
 SELECT (firstname, lastname, age, income) from customers
-WHERE (age >= 30 AND age <= 50  AND income < 100000)
+WHERE (age >= 30 AND age <= 50  AND income < 50000)
 */
-4657
+2362
 -- What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
 /*
 SELECT AVG(income) from customers
