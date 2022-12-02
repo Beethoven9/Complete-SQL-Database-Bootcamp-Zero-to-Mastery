@@ -34,7 +34,11 @@
 
 -- Question 1: How many official languages are there?
 -- Table: countrylanguage
-984
+
+SELECT COUNT (isofficial) from countrylanguage
+WHERE (isofficial = 'True')
+
+238
 
 -- Question 2: What is the average life expectancy in the world?
 -- Table: country
@@ -42,5 +46,8 @@
 
 -- Question 3: What is the average population for cities in the netherlands?
 -- Table: city
-350468.223584211817
+
+select AVG(population) from city
+WHERE (countrycode = 'NLD')
+185001.75
 
